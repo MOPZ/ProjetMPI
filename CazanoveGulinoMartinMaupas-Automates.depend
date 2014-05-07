@@ -1,0 +1,88 @@
+# depslib dependency file v1.0
+1396291406 source:c:\users\punky\documents\efrei\semestre 4\maths pour l'info\cazanovegulinomartinmaupas-automates\cazanovegulinomartinmaupas-entry.cpp
+	"CazanoveGulinoMartinMaupas-Entry.h"
+
+1396291640 c:\users\punky\documents\efrei\semestre 4\maths pour l'info\cazanovegulinomartinmaupas-automates\cazanovegulinomartinmaupas-entry.h
+	<iostream>
+	<string>
+	"conio.h"
+
+1353417674 c:\users\punky\documents\efrei\semestre 4\maths pour l'info\cazanovegulinomartinmaupas-automates\conio.h
+	<stdio.h>
+
+1396516044 source:c:\users\punky\documents\efrei\semestre 4\maths pour l'info\cazanovegulinomartinmaupas-automates\cazanovegulinomartinmaupas-interface.cpp
+	"CazanoveGulinoMartinMaupas-Interface.h"
+
+1396514175 c:\users\punky\documents\efrei\semestre 4\maths pour l'info\cazanovegulinomartinmaupas-automates\cazanovegulinomartinmaupas-interface.h
+	"CazanoveGulinoMartinMaupas-Window.h"
+
+1396513454 c:\users\punky\documents\efrei\semestre 4\maths pour l'info\cazanovegulinomartinmaupas-automates\cazanovegulinomartinmaupas-window.h
+	<iostream>
+	<string>
+	"conio.h"
+
+1399064454 source:c:\users\punky\documents\efrei\semestre 4\maths pour l'info\cazanovegulinomartinmaupas-automates\cazanovegulinomartinmaupas-loader.cpp
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<locale>
+	<sstream>
+	"CazanoveGulinoMartinMaupas-Loader.h"
+	"conio.h"
+
+1399064011 c:\users\punky\documents\efrei\semestre 4\maths pour l'info\cazanovegulinomartinmaupas-automates\cazanovegulinomartinmaupas-loader.h
+	<string>
+	<map>
+	"CazanoveGulinoMartinMaupas-Automate.h"
+
+1399064375 source:c:\users\punky\documents\efrei\semestre 4\maths pour l'info\cazanovegulinomartinmaupas-automates\cazanovegulinomartinmaupas-main.cpp
+	"CazanoveGulinoMartinMaupas-Interface.h"
+	"CazanoveGulinoMartinMaupas-Entry.h"
+	"CazanoveGulinoMartinMaupas-Loader.h"
+	"CazanoveGulinoMartinMaupas-Automate.h"
+	<set>
+
+1396518527 source:c:\users\punky\documents\efrei\semestre 4\maths pour l'info\cazanovegulinomartinmaupas-automates\cazanovegulinomartinmaupas-state.cpp
+	"CazanoveGulinoMartinMaupas-State.h"
+
+1396518506 c:\users\punky\documents\efrei\semestre 4\maths pour l'info\cazanovegulinomartinmaupas-automates\cazanovegulinomartinmaupas-state.h
+	<string>
+
+1396515454 source:c:\users\punky\documents\efrei\semestre 4\maths pour l'info\cazanovegulinomartinmaupas-automates\cazanovegulinomartinmaupas-transition.cpp
+	"CazanoveGulinoMartinMaupas-Transition.h"
+
+1396515447 c:\users\punky\documents\efrei\semestre 4\maths pour l'info\cazanovegulinomartinmaupas-automates\cazanovegulinomartinmaupas-transition.h
+	"CazanoveGulinoMartinMaupas-State.h"
+
+1398973900 source:c:\users\punky\documents\efrei\semestre 4\maths pour l'info\cazanovegulinomartinmaupas-automates\cazanovegulinomartinmaupas-window.cpp
+	"CazanoveGulinoMartinMaupas-Window.h"
+
+1353417622 source:c:\users\punky\documents\efrei\semestre 4\maths pour l'info\cazanovegulinomartinmaupas-automates\conio.c
+	<stdio.h>
+	<stdlib.h>
+	<unistd.h>
+	<windows.h>
+	<string.h>
+	"conio.h"
+
+1399062777 source:c:\users\punky\documents\efrei\semestre 4\maths pour l'info\cazanovegulinomartinmaupas-automates\cazanovegulinomartinmaupas-automate.cpp
+	"CazanoveGulinoMartinMaupas-Automate.h"
+
+1399062805 c:\users\punky\documents\efrei\semestre 4\maths pour l'info\cazanovegulinomartinmaupas-automates\cazanovegulinomartinmaupas-automate.h
+	<algorithm>
+	<iostream>
+	<vector>
+	<map>
+	<set>
+	<list>
+	"conio.h"
+
+1396795807 source:c:\users\punky\documents\efrei\semestre 4\maths pour l'info\cazanovegulinomartinmaupas-automates\cazanovegulinomartinmaupas-transitions.cpp
+	"CazanoveGulinoMartinMaupas-Transitions.h"
+
+1396796503 c:\users\punky\documents\efrei\semestre 4\maths pour l'info\cazanovegulinomartinmaupas-automates\cazanovegulinomartinmaupas-transitions.h
+	<vector>
+	<set>
+	<map>
+
