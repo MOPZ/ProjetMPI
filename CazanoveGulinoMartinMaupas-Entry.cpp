@@ -47,7 +47,7 @@ void Entry::type()
     //textcolor(LIGHTGRAY);
 }
 
-const string& Entry::get_text()
+string Entry::get_text()
 {
     return _text;
 }

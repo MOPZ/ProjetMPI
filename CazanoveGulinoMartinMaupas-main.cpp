@@ -7,7 +7,7 @@
 
 using namespace std;
 
-int main()
+int main(int argc, char **argv)
 {
     /* Interface display */
     Interface *interface = new Interface;
@@ -23,11 +23,16 @@ int main()
         file_name.type();
         exists = loader.test_path(file_name.get_text());
     }while (!exists);
-    if (loader.load(file_name.get_text()))
+    if (!loader.load(file_name.get_text())) // échec du chargement
     {
         loader.show_load_error();
     }
 
+    /* Traitement */
+
+    Automate *automate = loader.get(file_name.get_text());
+
+    automate->display_transitions();
 
     return 0;
 }

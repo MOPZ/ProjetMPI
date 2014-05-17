@@ -9,6 +9,17 @@ bool operator==(const State& s1, const State& s2)
     return false;
 }
 
+ostream& operator<<(ostream &os, const State& state)
+{
+    for (State::iterator it = state.begin(); it != state.end(); it++)
+    {
+        if (it != state.begin())
+            os << ",";
+        os << *it;
+    }
+    return os;
+}
+
 Automate::Automate() : _language(), _transitions(), _input(), _output()
 {
     //ctor
@@ -96,12 +107,8 @@ void Automate::add_output(state_type state)
 
 void Automate::add_transition(const State &b, const State &e, char c)
 {
-    if (find(_language.begin(), _language.end(), c) != _language.end())
-    {
-        t_transition t = {b, e, c};
-        _transitions[b].push_back(t);
-        //_transitions[b].insert(t);
-    }
+    t_transition t = {b, e, c};
+    _transitions[b].push_back(t);
     add_state(e);
 }
 
@@ -123,15 +130,13 @@ void Automate::display_transitions() const
     for (it = _transitions.begin(); it != _transitions.end(); it++)
     {
         // it->first = State
+        // it->second = Transitions
         gotoxy(x, y);
         display_state(it->first);
-        // it->second = Transitions
+        // it2 = t_transition
         for (Transitions::const_iterator it2 = it->second.begin(); it2 != it->second.end(); it2++)
         {
-            gotoxy(x+10, y);
-            cout << it2->c;
-            display_state(it2->e);
-            x += 10;
+            cout << " " << it2->c << it2->e;
         }
         x = xi;
         y++;
