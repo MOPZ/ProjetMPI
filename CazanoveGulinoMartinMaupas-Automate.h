@@ -14,6 +14,7 @@ typedef std::string state_type;
 typedef std::set<state_type> State;
 
 bool operator==(const State&, const State&);
+std::ostream& operator<<(std::ostream &os, const State&);
 
 struct t_transition
 {

@@ -19,6 +19,11 @@ Loader::~Loader()
 {
 }
 
+Automate* Loader::get(std::string path)
+{
+    return _files[path];
+}
+
 bool Loader::test_path(const std::string &path) const
 {
     FILE *file = NULL;

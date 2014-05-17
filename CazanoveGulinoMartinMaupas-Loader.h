@@ -8,12 +8,13 @@
 
 class Loader
 {
-    std::map<const std::string, Automate*> _files;
+    std::map<std::string, Automate*> _files;
 
     public :
         Loader();
         ~Loader();
 
+        Automate* get(std::string path);
         bool test_path(const std::string &path) const;
         bool load(const std::string &path);
         void show_load_error() const;

@@ -20,7 +20,7 @@ class Entry
         virtual ~Entry();
 
         void type();
-        const std::string& get_text();
+        std::string get_text();
 
     private:
 };
