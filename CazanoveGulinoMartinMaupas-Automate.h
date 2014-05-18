@@ -23,15 +23,23 @@ struct t_transition
     char c;
 };
 
+<<<<<<< HEAD
 bool operator==(const t_transition&, const t_transition&);
 
 typedef std::vector<t_transition> Transitions;
+=======
+typedef std::list<t_transition> Transitions;
+>>>>>>> 064adb67c5f1f1e93190d6f71e7f698d1ae95190
 
 class Automate
 {
     std::list<char> _language;
     std::map<State, Transitions> _transitions;
+<<<<<<< HEAD
     std::set<State> _input, _output;
+=======
+    std::list<State> _input, _output;
+>>>>>>> 064adb67c5f1f1e93190d6f71e7f698d1ae95190
 
     public:
         Automate();
@@ -44,12 +52,17 @@ class Automate
         void add_to_language(char);
 
         /* States */
+<<<<<<< HEAD
         void add_state(State states, bool in = false, bool out = false);
+=======
+        void add_state(const State &states, bool in = false, bool out = false);
+>>>>>>> 064adb67c5f1f1e93190d6f71e7f698d1ae95190
         void add_state(state_type, bool in = false, bool out = false);
         void remove_state(const State &);
         void remove_state(state_type state);
 
         /* Initial and terminal */
+<<<<<<< HEAD
         void add_input(State &states);
         void add_input(state_type);
         void add_output(State &states);
@@ -67,6 +80,28 @@ class Automate
         /* Traitement */
         bool is_standard() const;
         void make_it_standard();
+=======
+        void add_input(const State &states);
+        void add_input(state_type);
+        void add_output(const State &states);
+        void add_output(state_type);
+
+        /* Transitions */
+        void add_transition(const State &b, const State &e, char c = '\0');
+        void add_transition(state_type b, state_type e, char c);
+
+        /* Display */
+        void display_transitions() const;
+        static void display_state(const State &state)
+        {
+            for (State::iterator it = state.begin(); it != state.end(); it++)
+            {
+                if (it != state.begin())
+                    std::cout << ",";
+                std::cout << *it;
+            }
+        }
+>>>>>>> 064adb67c5f1f1e93190d6f71e7f698d1ae95190
 
     protected:
     private:

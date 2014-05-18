@@ -34,11 +34,14 @@ int main(int argc, char **argv)
 
     automate->display_transitions();
 
+<<<<<<< HEAD
     gotoxy(1, 15);
     automate->make_it_standard();
 
     gotoxy(1, wherey()+1);
     automate->display_transitions();
 
+=======
+>>>>>>> 064adb67c5f1f1e93190d6f71e7f698d1ae95190
     return 0;
 }

@@ -9,17 +9,26 @@ bool operator==(const State& s1, const State& s2)
     return false;
 }
 
+<<<<<<< HEAD
 ostream& operator<<(ostream &os, const State& states)
 {
     for (State::iterator it = states.begin(); it != states.end(); it++)
     {
         if (it != states.begin())
+=======
+ostream& operator<<(ostream &os, const State& state)
+{
+    for (State::iterator it = state.begin(); it != state.end(); it++)
+    {
+        if (it != state.begin())
+>>>>>>> 064adb67c5f1f1e93190d6f71e7f698d1ae95190
             os << ",";
         os << *it;
     }
     return os;
 }
 
+<<<<<<< HEAD
 bool operator==(const t_transition& t1, const t_transition& t2)
 {
     if (t1.b == t2.b && t1.e == t2.e && t1.c == t2.c)
@@ -27,6 +36,8 @@ bool operator==(const t_transition& t1, const t_transition& t2)
     return false;
 }
 
+=======
+>>>>>>> 064adb67c5f1f1e93190d6f71e7f698d1ae95190
 Automate::Automate() : _language(), _transitions(), _input(), _output()
 {
     //ctor
@@ -63,7 +74,11 @@ void Automate::add_to_language(char c)
     _language.push_back(c);
 }
 
+<<<<<<< HEAD
 void Automate::add_state(State states, bool in, bool out)
+=======
+void Automate::add_state(const State &states, bool in, bool out)
+>>>>>>> 064adb67c5f1f1e93190d6f71e7f698d1ae95190
 {
     Transitions old = _transitions[states];
     _transitions[states] = old;
@@ -88,9 +103,15 @@ void Automate::remove_state(state_type state)
     remove_state(s);
 }
 
+<<<<<<< HEAD
 void Automate::add_input(State &states)
 {
     _input.insert(states);
+=======
+void Automate::add_input(const State &states)
+{
+    _input.push_back(states);
+>>>>>>> 064adb67c5f1f1e93190d6f71e7f698d1ae95190
 }
 
 void Automate::add_input(state_type state)
@@ -100,9 +121,15 @@ void Automate::add_input(state_type state)
     add_input(s);
 }
 
+<<<<<<< HEAD
 void Automate::add_output(State &states)
 {
     _output.insert(states);
+=======
+void Automate::add_output(const State &states)
+{
+    _output.push_back(states);
+>>>>>>> 064adb67c5f1f1e93190d6f71e7f698d1ae95190
 }
 
 void Automate::add_output(state_type state)
@@ -112,6 +139,7 @@ void Automate::add_output(state_type state)
     add_output(s);
 }
 
+<<<<<<< HEAD
 void Automate::add_transition(State b, State e, char c)
 {
     t_transition t = {b, e, c};
@@ -120,10 +148,16 @@ void Automate::add_transition(State b, State e, char c)
         if (*it == t)
             return;
     }
+=======
+void Automate::add_transition(const State &b, const State &e, char c)
+{
+    t_transition t = {b, e, c};
+>>>>>>> 064adb67c5f1f1e93190d6f71e7f698d1ae95190
     _transitions[b].push_back(t);
     add_state(e);
 }
 
+<<<<<<< HEAD
 void Automate::remove_transition(State &b, State &e, char c)
 {
     t_transition t = {b, e, c};
@@ -132,6 +166,8 @@ void Automate::remove_transition(State &b, State &e, char c)
     _transitions[b].erase(it);
 }
 
+=======
+>>>>>>> 064adb67c5f1f1e93190d6f71e7f698d1ae95190
 void Automate::add_transition(state_type b, state_type e, char c)
 {
     State s, p;
@@ -152,6 +188,7 @@ void Automate::display_transitions() const
         // it->first = State
         // it->second = Transitions
         gotoxy(x, y);
+<<<<<<< HEAD
         cout << it->first << ":";
         // it2 = t_transition
         for (Transitions::const_iterator it2 = it->second.begin(); it2 != it->second.end(); it2++)
@@ -159,12 +196,20 @@ void Automate::display_transitions() const
             if (it2 != it->second.begin())
                 cout << ",";
             cout << " " << it2->c << " " << it2->e;
+=======
+        display_state(it->first);
+        // it2 = t_transition
+        for (Transitions::const_iterator it2 = it->second.begin(); it2 != it->second.end(); it2++)
+        {
+            cout << " " << it2->c << it2->e;
+>>>>>>> 064adb67c5f1f1e93190d6f71e7f698d1ae95190
         }
         x = xi;
         y++;
     }
 }
 
+<<<<<<< HEAD
 bool Automate::is_standard() const
 {
     // Check nombre d'états initiaux
@@ -216,4 +261,6 @@ void Automate::make_it_standard()
     cout << "L'automate est maintenant standard." << endl;
 }
 
+=======
+>>>>>>> 064adb67c5f1f1e93190d6f71e7f698d1ae95190
 

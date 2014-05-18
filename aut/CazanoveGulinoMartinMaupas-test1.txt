@@ -15,7 +15,11 @@ b
 </output>
 <transition>
 1a2
+<<<<<<< HEAD
 2a1
 3b4
 4a3
+=======
+3b4
+>>>>>>> 064adb67c5f1f1e93190d6f71e7f698d1ae95190
 </transition>
