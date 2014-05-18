@@ -34,5 +34,11 @@ int main(int argc, char **argv)
 
     automate->display_transitions();
 
+    gotoxy(1, 15);
+    automate->make_it_standard();
+
+    gotoxy(1, wherey()+1);
+    automate->display_transitions();
+
     return 0;
 }
