@@ -23,13 +23,15 @@ struct t_transition
     char c;
 };
 
-typedef std::list<t_transition> Transitions;
+bool operator==(const t_transition&, const t_transition&);
+
+typedef std::vector<t_transition> Transitions;
 
 class Automate
 {
     std::list<char> _language;
     std::map<State, Transitions> _transitions;
-    std::list<State> _input, _output;
+    std::set<State> _input, _output;
 
     public:
         Automate();
@@ -42,32 +44,29 @@ class Automate
         void add_to_language(char);
 
         /* States */
-        void add_state(const State &states, bool in = false, bool out = false);
+        void add_state(State states, bool in = false, bool out = false);
         void add_state(state_type, bool in = false, bool out = false);
         void remove_state(const State &);
         void remove_state(state_type state);
 
         /* Initial and terminal */
-        void add_input(const State &states);
+        void add_input(State &states);
         void add_input(state_type);
-        void add_output(const State &states);
+        void add_output(State &states);
         void add_output(state_type);
 
         /* Transitions */
-        void add_transition(const State &b, const State &e, char c = '\0');
+        void add_transition(State b, State e, char c = '\0');
         void add_transition(state_type b, state_type e, char c);
+        void remove_transition(State &b, State &e, char c);
+        void remove_transition(state_type &b, state_type &e, char c);
 
         /* Display */
         void display_transitions() const;
-        static void display_state(const State &state)
-        {
-            for (State::iterator it = state.begin(); it != state.end(); it++)
-            {
-                if (it != state.begin())
-                    std::cout << ",";
-                std::cout << *it;
-            }
-        }
+
+        /* Traitement */
+        bool is_standard() const;
+        void make_it_standard();
 
     protected:
     private:
