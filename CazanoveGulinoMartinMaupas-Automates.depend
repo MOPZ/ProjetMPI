@@ -36,7 +36,15 @@
 	<map>
 	"CazanoveGulinoMartinMaupas-Automate.h"
 
+<<<<<<< HEAD
 1400410235 source:c:\users\punky\documents\efrei\semestre 4\maths pour l'info\cazanovegulinomartinmaupas-automates\cazanovegulinomartinmaupas-main.cpp
+=======
+<<<<<<< HEAD
+1400410235 source:c:\users\punky\documents\efrei\semestre 4\maths pour l'info\cazanovegulinomartinmaupas-automates\cazanovegulinomartinmaupas-main.cpp
+=======
+1400168995 source:c:\users\punky\documents\efrei\semestre 4\maths pour l'info\cazanovegulinomartinmaupas-automates\cazanovegulinomartinmaupas-main.cpp
+>>>>>>> 064adb67c5f1f1e93190d6f71e7f698d1ae95190
+>>>>>>> f5c0a5754852fda70a31ad9f858d57d70c218401
 	"CazanoveGulinoMartinMaupas-Interface.h"
 	"CazanoveGulinoMartinMaupas-Entry.h"
 	"CazanoveGulinoMartinMaupas-Loader.h"
@@ -66,10 +74,24 @@
 	<string.h>
 	"conio.h"
 
+<<<<<<< HEAD
 1400411625 source:c:\users\punky\documents\efrei\semestre 4\maths pour l'info\cazanovegulinomartinmaupas-automates\cazanovegulinomartinmaupas-automate.cpp
 	"CazanoveGulinoMartinMaupas-Automate.h"
 
 1400409520 c:\users\punky\documents\efrei\semestre 4\maths pour l'info\cazanovegulinomartinmaupas-automates\cazanovegulinomartinmaupas-automate.h
+=======
+<<<<<<< HEAD
+1400411625 source:c:\users\punky\documents\efrei\semestre 4\maths pour l'info\cazanovegulinomartinmaupas-automates\cazanovegulinomartinmaupas-automate.cpp
+	"CazanoveGulinoMartinMaupas-Automate.h"
+
+1400409520 c:\users\punky\documents\efrei\semestre 4\maths pour l'info\cazanovegulinomartinmaupas-automates\cazanovegulinomartinmaupas-automate.h
+=======
+1400342590 source:c:\users\punky\documents\efrei\semestre 4\maths pour l'info\cazanovegulinomartinmaupas-automates\cazanovegulinomartinmaupas-automate.cpp
+	"CazanoveGulinoMartinMaupas-Automate.h"
+
+1400343048 c:\users\punky\documents\efrei\semestre 4\maths pour l'info\cazanovegulinomartinmaupas-automates\cazanovegulinomartinmaupas-automate.h
+>>>>>>> 064adb67c5f1f1e93190d6f71e7f698d1ae95190
+>>>>>>> f5c0a5754852fda70a31ad9f858d57d70c218401
 	<algorithm>
 	<iostream>
 	<vector>
